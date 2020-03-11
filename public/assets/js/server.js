@@ -56,7 +56,8 @@ app.delete(`/api/notes/:id`, function (req, res){
     console.log(delNote)
     for (i = 0; i < notes.length; i++)
     if (delNote == notes[i].id){
-        console.log(notes[i])
+        notes.pop(notes[i])
+        
     } 
 })
 

@@ -21,7 +21,7 @@ JavaScript, Node JS, Express
 ## I love getting feedback and support! 🎆🎇🎈
 
 
-## 🕹🕹🎮 Preview
+## 📝📓💷 Preview
 
 ![Image of Preview](public/assets/css/Preview.png)
 

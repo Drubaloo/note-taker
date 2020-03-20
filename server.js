@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + 'public'))
 
 //(DATA)
 // =============================================================
@@ -64,10 +64,10 @@ app.delete(`/api/notes/:id`, function (req, res){
     console.log(delNote)
     for (i = 0; i < notes.length; i++)
     if (delNote == notes[i].id){
-        notes.pop(notes[i])  //NEED TO FIND ALTERNATIVE
-        
+       notes[i] = {}
     } 
 })
+
 
 // Starts the server to begin listening
 // =============================================================
